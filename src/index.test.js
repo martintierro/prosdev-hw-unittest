@@ -4,9 +4,13 @@ const { gradeClassifier } = require('./index');
 describe('Scenario', () => {
   it('When ..., then ...', () => {
     // Arrange
+    const grade = 100
 
     // Act
-
+    const letter_grade = gradeClassifier(grade)
+    console.log(letter_grade)
+    
     // Assert
+    expect(letter_grade).toMatch("O - Outstanding")
   });
 });
